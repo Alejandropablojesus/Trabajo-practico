@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../Contacto/contacto.css">
+        <link rel="stylesheet" href="../assets/css/normalizate.css">
+        <title>Contacto</title>
+    </head>
+    <body>
+        <div class="formulario">
+            <h1 class="titulo">Realiza tu Pedido</h1>
+            <form class="pedido" action="/procesar_pedido" method="POST">
+                <label for="nombre"></label>
+                <input class="inputs" type="text" id="nombre" name="nombre"
+                    required placeholder="Nombre">
+
+                <label for="email"></label>
+                <input class="inputs" type="email" id="email" name="email"
+                    required placeholder="email">
+
+                <label for="locales"></label>
+                <select name="local de comida" id="locales" class="inputs">
+                    <option value>Sleciona un local</option>
+                    <option value="Burga's">Burga's</option>
+                    <option value="Ches burggers">Ches burggers</option>
+                    <option value="Gluten's">Gluten's</option>
+                </select>
+
+                <label for="telefono"></label>
+                <input class="inputs" type="tel" id="telefono" name="telefono"
+                    placeholder="Telefono:+54" required>
+
+                <label for="direccion"></label>
+                <textarea class="inputs" id="direccion" name="direccion"
+                    rows="4" cols="30" required
+                    placeholder="Direcion de entrega"></textarea>
+
+                <label for="comida"></label>
+                <select class="inputs" id="comida" name="comida" required>
+                    <option value>Selecciona tu Hamburguesa</option>
+                    <option value="chesburger">ches burger</option>
+                    <option value="burga "> Burga Completa</option>
+                    <option value="Argenta">Argenta</option>
+
+                </select>
+
+                <label for="cantidad"></label>
+                <input class="inputs" type="number" id="cantidad"
+                    name="cantidad" min="1" max="5" required
+                    placeholder="Cantidad">
+
+                <input class="boton" type="submit" value="Enviar Pedido">
+            </form>
+        </div>
+    </body>
+</html>
