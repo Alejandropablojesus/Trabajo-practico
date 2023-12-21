@@ -141,3 +141,43 @@ a:hover {
 .div1 {
     margin-top: 20px;
 }
+
+
+@media only screen and (max-width: 767px) {
+    .icono {
+        width: 60px; 
+        height: 50px;
+    }
+    .titulo {
+        font-size: 24px; 
+    }
+    .nav-list {
+        flex-direction: column; 
+        align-items: center; 
+        padding: 10px; 
+    }
+    .nav-item {
+        margin-bottom: 10px; 
+    }
+    main {
+        padding: 20px; 
+    }
+    .burgas {
+        font-size: 36px; 
+        padding: 20px 0; 
+    }
+    .productos-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+        gap: 10px; 
+    }
+    .productos {
+        padding: 10px; 
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    
+}
+
+@media only screen and (min-width: 1024px) {
+}
+
